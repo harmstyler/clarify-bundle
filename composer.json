@@ -15,9 +15,6 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "psr-0": { "HarmsTyler\\ClarifyBundle": "" }
-        }
-    },
-    "target-dir": "HarmsTyler/ClarifyBundle"
+        "psr-4": { "HarmsTyler\\ClarifyBundle": "" }
+    }
 }
