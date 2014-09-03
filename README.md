@@ -48,9 +48,9 @@ harms_tyler_clarify:
 ## Usage
 
 ```php
-        $bundle = $this->get('clarify.app');
-        $result = $bundle->search('close');
-        $results = $result['item_results'];
+$bundle = $this->get('clarify.app');
+$result = $bundle->search('close');
+$results = $result['item_results'];
 ```
 
 ## Multiple apps
@@ -65,8 +65,8 @@ harms_tyler_clarify:
 ```
 
 ```php
-    $defaultBundle = $this->get('clarify.app');
-    $anotherBundle = $this->get('clarify.app');
+$defaultBundle = $this->get('clarify.app');
+$anotherBundle = $this->get('clarify.app');
 ```
 
 You can also swap the `default` name with your own, doing so will require declaring the default app:
@@ -82,11 +82,11 @@ harms_tyler_clarify:
 ```
 
 ```php
-    $firstApp = $this->get('clarify.app');
-    //or
-    $firstApp = $this->get('clarify.app.firstApp');
+$firstApp = $this->get('clarify.app');
+//or
+$firstApp = $this->get('clarify.app.firstApp');
 
-    $secondApp = $this->get('clarify.app.secondApp');
+$secondApp = $this->get('clarify.app.secondApp');
 ```
 
 ## License
