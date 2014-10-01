@@ -5,7 +5,7 @@
     "type": "symfony-bundle",
     "require": {
         "symfony/framework-bundle": "~2.1",
-        "clarify/clarify-helper": "dev-master@dev"
+        "clarify/clarify-helper": "1.*"
     },
     "license": "MIT",
     "authors": [

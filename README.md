@@ -66,7 +66,7 @@ harms_tyler_clarify:
 
 ```php
 $defaultBundle = $this->get('clarify.app');
-$anotherBundle = $this->get('clarify.app');
+$anotherBundle = $this->get('clarify.app.another');
 ```
 
 You can also swap the `default` name with your own, doing so will require declaring the default app:
