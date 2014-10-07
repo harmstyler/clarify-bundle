@@ -3,11 +3,8 @@
 namespace HarmsTyler\ClarifyBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Definition;
-use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Symfony\Component\DependencyInjection\Loader;
 
 /**
  * This is the class that loads and manages your bundle configuration
@@ -31,12 +28,10 @@ class HarmsTylerClarifyExtension extends Extension
             $defaultApp = key($config['apps']);
         }
 
-        $apps = array();
         foreach ($config['apps'] as $name => $appOptions) {
             $appName = sprintf('clarify.app.%s', $name);
             $bundleClass = 'Clarify\Bundle';
             $bundleDefinition = new Definition($bundleClass, array($appOptions['api_key']));
-            $apps[$name] = new Reference($appName);
 
             $container->setDefinition($appName, $bundleDefinition);
 
