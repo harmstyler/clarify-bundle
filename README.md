@@ -3,6 +3,8 @@
 The HarmsTylerClarifyBundle is a symfony wrapper bundle for the [Clarify](http://clarify.io/) php helper library.
 Much of the Extension code is inspired by the [NelmioSolariumBundle](https://github.com/nelmio/NelmioSolariumBundle).
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/777dcc29-7a65-4c0d-928f-8af54b95586d/mini.png)](https://insight.sensiolabs.com/projects/777dcc29-7a65-4c0d-928f-8af54b95586d)
+
 ## Installation
 
 Add HarmsTylerClarifyBundle in your composer.json:
